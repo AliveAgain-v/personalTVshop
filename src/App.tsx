@@ -1,10 +1,10 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Star, Tv, Shield, Zap, Award, X } from 'lucide-react';
+import { Phone, Mail, Star, Tv, Shield, Zap, Award, X } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
 function App() {
   const [showForm, setShowForm] = React.useState(false);
-  const [selectedModel, setSelectedModel] = React.useState('');
+  const [, setSelectedModel] = React.useState('');
   const [formData, setFormData] = React.useState({
     name: '',
     phone: '',
@@ -163,23 +163,6 @@ function App() {
     }
   ];
 
-  const testimonials = [
-    {
-      name: "Sarah Johnson",
-      text: "Mike helped me find the perfect TV for my living room. His expertise and personalized service made all the difference!",
-      rating: 5
-    },
-    {
-      name: "Robert Chen",
-      text: "Outstanding service! Mike knows everything about TVs and helped me get exactly what I needed within my budget.",
-      rating: 5
-    },
-    {
-      name: "Emily Davis",
-      text: "Professional, knowledgeable, and honest. Mike didn't try to oversell me and found the perfect TV for my needs.",
-      rating: 5
-    }
-  ];
 
   return (
     <div className="min-h-screen bg-white">
@@ -210,14 +193,15 @@ function App() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                Your Personal<br />
-                <span className="text-gray-400">TV Shopper</span>
+                Winnipeg's Premier<br />
+                <span className="text-gray-400">TV Sales Expert</span>
               </h1>
               <p className="text-xl mb-8 text-blue-100 leading-relaxed">
+                Specializing in Sony A95L, Samsung S95F, LG G5, C5 OLED TVs in Manitoba
               </p>
               <p className="text-xl mb-8 text-gray-200 leading-relaxed">
-                Helping customers find their perfect TV. From budget-friendly options to premium home theaters, 
-                I'll help you make the right choice.
+                Winnipeg's trusted TV sales expert helping customers find their perfect Sony A95L QD-OLED, Samsung S95F, LG G5/C5 OLED, and premium TV models. 
+                From budget-friendly options to premium home theaters, I'll help you make the right choice with professional installation in Manitoba.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button onClick={() => openForm()} className="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center">
@@ -231,7 +215,7 @@ function App() {
             <div className="flex justify-center">
               <img 
                 src="https://images.pexels.com/photos/1444416/pexels-photo-1444416.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                alt="Premium TV Display"
+                alt="Premium OLED and QD-OLED TV Display - Sony A95L, Samsung S95F, LG G5, C5 Models Available in Winnipeg"
                 className="rounded-lg shadow-2xl max-w-full h-auto"
               />
             </div>
@@ -244,10 +228,10 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Choose Me?</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Choose Winnipeg's Premier TV Sales Expert?</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                I've helped thousands of customers find their perfect viewing experience. 
-                I stay up-to-date with the latest technology and work directly with manufacturers to get you the best deals.
+                I've helped thousands of Winnipeg and Manitoba customers find their perfect viewing experience with Sony A95L, Samsung S95F, LG G5, and C5 OLED TVs. 
+                I stay up-to-date with the latest OLED and QD-OLED technology and work directly with manufacturers to get you the best deals on premium TV models in Manitoba.
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="flex items-center">
@@ -313,9 +297,10 @@ function App() {
       <section id="products" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Featured TV Models</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Featured Premium TV Models - Sony A95L, Samsung S95F, LG G5, C5 OLED</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Discover my handpicked selection of premium TVs from top brands. Contact me for personalized pricing and exclusive deals.
+              Discover my handpicked selection of premium OLED and QD-OLED TVs including Sony A95L, Samsung S95F, LG G5, LG C5, and other top models available in Winnipeg. 
+              Contact me for personalized pricing and exclusive deals on these premium TV models in Manitoba.
             </p>
           </div>
 
@@ -325,7 +310,7 @@ function App() {
                 <div className="aspect-video overflow-hidden">
                   <img 
                     src={product.image} 
-                    alt={product.name}
+                    alt={`${product.name} ${product.model} - Premium ${product.features.includes('QD-OLED') ? 'QD-OLED' : product.features.includes('OLED') ? 'OLED' : 'LED'} TV Available in Winnipeg, Manitoba`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -366,12 +351,77 @@ function App() {
         </div>
       </section>
 
+      {/* Local SEO Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Winnipeg's Premier TV Sales Expert - Sony A95L, Samsung S95F, LG G5, C5 OLED Specialist</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Serving Winnipeg and Manitoba with expert TV sales, professional installation, and personalized recommendations for Sony A95L QD-OLED, Samsung S95F, LG G5, and LG C5 OLED TVs.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Winnipeg TV Sales</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li>• Sony A95L QD-OLED TVs</li>
+                <li>• Samsung S95F QD-OLED Models</li>
+                <li>• LG G5 OLED Gallery Design</li>
+                <li>• LG C5 OLED Premium Series</li>
+                <li>• Professional TV Installation</li>
+                <li>• Competitive Manitoba Pricing</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Manitoba TV Expert</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li>• Premium OLED TV Selection</li>
+                <li>• QD-OLED Technology Expert</li>
+                <li>• Home Theater Setup</li>
+                <li>• Gaming TV Optimization</li>
+                <li>• Extended Warranty Options</li>
+                <li>• Local Customer Support</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">TV Installation Winnipeg</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li>• Professional Mounting</li>
+                <li>• Cable Management</li>
+                <li>• Sound System Setup</li>
+                <li>• Smart TV Configuration</li>
+                <li>• Gaming Console Setup</li>
+                <li>• Same-Day Service Available</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-200 max-w-4xl mx-auto">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Why Choose Winnipeg's TV Sales Expert?</h3>
+              <p className="text-gray-700 mb-6">
+                <strong>Local Expertise:</strong> Based in Winnipeg, serving all of Manitoba with personalized TV recommendations.<br/>
+                <strong>Premium Models:</strong> Specializing in Sony A95L, Samsung S95F, LG G5, and C5 OLED TVs.<br/>
+                <strong>Professional Service:</strong> Complete TV installation, setup, and ongoing support.<br/>
+                <strong>Competitive Pricing:</strong> Direct manufacturer relationships for the best deals in Manitoba.
+              </p>
+              <button onClick={() => openForm()} className="bg-black text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
+                Get Your Winnipeg TV Quote Today
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">Ready to Find Your Perfect TV?</h2>
-            <p className="text-xl text-gray-400">Contact us today for personalized recommendations and exclusive pricing</p>
+            <h2 className="text-3xl font-bold mb-4">Ready to Find Your Perfect Sony A95L, Samsung S95F, LG G5, or C5 OLED TV in Winnipeg?</h2>
+            <p className="text-xl text-gray-400">Contact Winnipeg's premier TV sales expert today for personalized recommendations and exclusive pricing on premium OLED and QD-OLED TVs in Manitoba</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
@@ -420,7 +470,7 @@ function App() {
               <span className="font-semibold">Your Personal TV Shopper</span>
             </div>
             <div className="text-gray-500 text-sm">
-              © 2025 Your Personal TV Shopper. Licensed TV Sales Professional.
+              © 2025 Your Personal TV Shopper. Licensed TV Sales Professional specializing in Sony A95L, Samsung S95F, LG G5, C5 OLED TVs in Winnipeg, Manitoba.
             </div>
           </div>
         </div>
