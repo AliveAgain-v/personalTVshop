@@ -81,84 +81,84 @@ function App() {
       id: 1,
       name: "Samsung Frame Pro",
       model: "QN65LS03D",
-      image: "https://images.pexels.com/photos/1444416/pexels-photo-1444416.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "不做满墙电视柜后悔了吗_1_77家有个毛毛猪_来自小红书网页版.jpg",
       features: ["Art Mode", "Anti-Glare Matte Display", "Customizable Bezels", "4K Neo QLED", "120Hz VRR"]
     },
     {
       id: 2,
       name: "Samsung Frame",
       model: "QN65LS03B",
-      image: "https://images.pexels.com/photos/1201996/pexels-photo-1201996.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "frame.png",
       features: ["Art Mode", "One Connect Box", "4K QLED", "120Hz VRR", "Anti-Reflection"]
     },
     {
       id: 3,
       name: "Samsung S95F QD-OLED",
       model: "QN65S95F",
-      image: "https://images.pexels.com/photos/1201996/pexels-photo-1201996.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "s95f.png",
       features: ["QD-OLED Display", "Neural Quantum Processor 4K", "LaserSlim Design", "165Hz VRR"]
     },
     {
       id: 4,
       name: "Samsung S90F OLED",
       model: "QN65S90F",
-      image: "https://images.pexels.com/photos/1444416/pexels-photo-1444416.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "s90f.png",
       features: ["QD-OLED Display", "Motion Xcelerator Turbo+", "Gaming Hub", "165Hz VRR"]
     },
     {
       id: 5,
       name: "LG G5 OLED",
       model: "OLED65G5PUA",
-      image: "https://images.pexels.com/photos/1201996/pexels-photo-1201996.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "LG发布2025旗舰OLED电视系列，无线4K更智能_1_咬咬_来自小红书网页版.jpg",
       features: ["Gallery Design", "α11 AI Processor 4K Gen2", "Dolby Vision IQ", "165Hz VRR"]
     },
     {
       id: 6,
       name: "LG C5 OLED",
       model: "OLED65C5PUA",
-      image: "https://images.pexels.com/photos/1444416/pexels-photo-1444416.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "_1_LG南京线下实体店_来自小红书网页版.jpg",
       features: ["OLED evo", "a9 AI Processor 4K Gen8", "4 HDMI 2.1", "144Hz VRR"]
     },
     {
       id: 7,
       name: "LG B5 OLED",
       model: "OLED65B5PUA",
-      image: "https://images.pexels.com/photos/1201996/pexels-photo-1201996.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "一个电视全屋共用？当然是用移动电视架啦！_1_左下_来自小红书网页版.jpg",
       features: ["OLED Display", "α8 AI Processor 4K Gen2", "Filmmaker Mode", "120Hz VRR"]
     },
     {
       id: 8,
       name: "Sony A95L QD-OLED",
       model: "XR65A95L",
-      image: "https://images.pexels.com/photos/1444416/pexels-photo-1444416.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "A95L旗舰款电视座架摆放和挂墙效果_1_中国龙_来自小红书网页版.jpg",
       features: ["QD-OLED", "Cognitive Processor XR", "Perfect for PS5", "120Hz VRR"]
     },
     {
       id: 9,
-      name: "Sony BRAVIA 5",
-      model: "K65X75WL",
-      image: "https://images.pexels.com/photos/1201996/pexels-photo-1201996.jpeg?auto=compress&cs=tinysrgb&w=800",
+      name: "Sony BRAVIA 9",
+      model: "K65XR90",
+      image: "TVFY24_UP_PrimaryTout_0pt-fallback-m.webp",
       features: ["Full Array LED", "XR Processor", "Google TV", "120Hz VRR"]
     },
     {
       id: 10,
       name: "Sony X90L",
       model: "XR65X90L",
-      image: "https://images.pexels.com/photos/1444416/pexels-photo-1444416.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "x90l.jpeg",
       features: ["Full Array LED", "Cognitive Processor XR", "Perfect for PS5", "120Hz VRR"]
     },
     {
       id: 11,
       name: "Hisense U88QG ULED",
       model: "65U88QG",
-      image: "https://images.pexels.com/photos/1201996/pexels-photo-1201996.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "shopify-image_6042a119-da44-401b-a1d6-03a431141271_1500x.webp",
       features: ["ULED Pro", "Mini-LED", "165Hz VRR", "Dolby Vision IQ", "HDR10+"]
     },
     {
       id: 12,
       name: "Hisense U78QG ULED", 
       model: "65U78QG",
-      image: "https://images.pexels.com/photos/1444416/pexels-photo-1444416.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "image.webp",
       features: ["ULED", "Mini-LED", "144Hz VRR", "Dolby Vision", "HDR10+"]
     }
   ];
